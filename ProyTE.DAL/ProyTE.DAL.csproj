@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1FE61F3-7A56-4AFA-B21B-814D760306FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyTE.DAL</RootNamespace>
+    <AssemblyName>ProyTE.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>D:\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>D:\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>D:\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>D:\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>D:\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>BD.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ICategorias.cs" />
+    <Compile Include="Interfaces\IAlquileres.cs" />
+    <Compile Include="Interfaces\IAlquiler_Producto.cs" />
+    <Compile Include="Interfaces\IHistorial_Medidas.cs" />
+    <Compile Include="Interfaces\IPermisos.cs" />
+    <Compile Include="Interfaces\IPrendas.cs" />
+    <Compile Include="Interfaces\IProductos.cs" />
+    <Compile Include="Interfaces\IRoles.cs" />
+    <Compile Include="Interfaces\IRol_Permiso.cs" />
+    <Compile Include="Interfaces\ITarjetas.cs" />
+    <Compile Include="Interfaces\ITipo_Tarjetas.cs" />
+    <Compile Include="Interfaces\IUsuarios.cs" />
+    <Compile Include="Interfaces\IUsuario_Tarjeta.cs" />
+    <Compile Include="Metodos\MAlquileres.cs" />
+    <Compile Include="Metodos\MAlquiler_Producto.cs" />
+    <Compile Include="Metodos\MBase.cs" />
+    <Compile Include="Metodos\MCategorias.cs" />
+    <Compile Include="Metodos\MHistorial_Medidas.cs" />
+    <Compile Include="Metodos\MPermisos.cs" />
+    <Compile Include="Metodos\MPrendas.cs" />
+    <Compile Include="Metodos\MProductos.cs" />
+    <Compile Include="Metodos\MRoles.cs" />
+    <Compile Include="Metodos\MRol_Permiso.cs" />
+    <Compile Include="Metodos\MTarjetas.cs" />
+    <Compile Include="Metodos\MTipo_Tarjetas.cs" />
+    <Compile Include="Metodos\MUsuarios.cs" />
+    <Compile Include="Metodos\MUsuario_Tarjeta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BD.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>BD.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ProyTE.DATA\ProyTE.DATA.csproj">
+      <Project>{c9f969a4-e468-47de-92fa-b0b6221166b2}</Project>
+      <Name>ProyTE.DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
