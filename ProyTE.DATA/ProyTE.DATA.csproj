@@ -58,6 +58,7 @@
     <Compile Include="TbTipo_Tarjetas.cs" />
     <Compile Include="TbUsuarios.cs" />
     <Compile Include="TbUsuario_Tarjeta.cs" />
+    <Compile Include="ViewProducto.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

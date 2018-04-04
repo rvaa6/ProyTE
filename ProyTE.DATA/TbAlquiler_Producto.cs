@@ -10,7 +10,6 @@ namespace ProyTE.DATA
     //Intermedia de Alquileres y Productos
     public class TbAlquiler_Producto
     {
-        //Prueba
         [AutoIncrement]
         public int Id_Alquiler_Producto { get; set; }
 

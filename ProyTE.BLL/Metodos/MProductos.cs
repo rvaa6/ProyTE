@@ -34,5 +34,10 @@ namespace ProyTE.BLL.Metodos
         {
             return produc.ListarProductos();
         }
+
+        public List<ViewProducto> ListarVProductos()
+        {
+            return produc.ListarVProductos();
+        }
     }
 }

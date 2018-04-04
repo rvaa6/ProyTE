@@ -19,5 +19,7 @@ namespace ProyTE.BLL.Interfaces
         void ActualizarProducto(TbProductos producto);
         // Delete
         void EliminarProducto(int idProducto);
+        //View de TBProductos-TbPrendas-TbCategorias
+        List<ViewProducto> ListarVProductos();
     }
 }

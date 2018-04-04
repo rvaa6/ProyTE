@@ -36,5 +36,10 @@ namespace ProyTE.DAL.Metodos
         {
             return _db.Select<TbProductos>();
         }
+
+        public List<ViewProducto> ListarVProductos()
+        {
+            return _db.SqlList<ViewProducto>("EXEC sp_VerProductos");
+        }
     }
 }
