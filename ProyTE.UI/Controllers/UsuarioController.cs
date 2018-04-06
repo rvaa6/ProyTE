@@ -23,8 +23,8 @@ namespace ProyTE.UI.Controllers
         // GET: Usuario
         public ActionResult Index()
         { 
-            var listaUsuarios = usua.ListarUsuarios();
-            var usuarios = Mapper.Map<List<Models.TbUsuarios>>(listaUsuarios);
+            var lista = usua.ListarUsuarios();
+            var usuarios = Mapper.Map<List<Models.TbUsuarios>>(lista);
             return View(usuarios);
         }
 
@@ -40,8 +40,8 @@ namespace ProyTE.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuarioInsertar = Mapper.Map<DATA.TbUsuarios>(usuario);
-                usua.InsertarUsuario(usuarioInsertar);
+                var insertar = Mapper.Map<DATA.TbUsuarios>(usuario);
+                usua.InsertarUsuario(insertar);
                 return RedirectToAction("Index");
             }
             return View();
@@ -51,16 +51,16 @@ namespace ProyTE.UI.Controllers
         public ActionResult Details(int id)
         {
             var usuario = usua.BuscarUsuario(id);
-            var usuarioMostrar = Mapper.Map<Models.TbUsuarios>(usuario);
-            return View(usuarioMostrar);
+            var mostrar = Mapper.Map<Models.TbUsuarios>(usuario);
+            return View(mostrar);
         }
 
         //vista update
         public ActionResult Edit(int id)
         {
             var usuario = usua.BuscarUsuario(id);
-            var usuarioMostrar = Mapper.Map<Models.TbUsuarios>(usuario);
-            return View(usuarioMostrar);
+            var mostrar = Mapper.Map<Models.TbUsuarios>(usuario);
+            return View(mostrar);
         }
 
         //update
@@ -69,8 +69,8 @@ namespace ProyTE.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                var usuarioModificar = Mapper.Map<DATA.TbUsuarios>(usuario);
-                usua.ActualizarUsuario(usuarioModificar);
+                var modificar = Mapper.Map<DATA.TbUsuarios>(usuario);
+                usua.ActualizarUsuario(modificar);
                 return RedirectToAction("Index");
             }
             return View(usuario);
