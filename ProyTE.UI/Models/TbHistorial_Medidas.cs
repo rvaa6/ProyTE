@@ -13,8 +13,11 @@ namespace ProyTE.UI.Models
 
         public int Id_Usuario { get; set; }
 
+        [Required(ErrorMessage = "Medida requerida")]
+        [StringLength(80, ErrorMessage = "Maximo 80 caracteres")]
         public string Medida { get; set; }
 
+        [StringLength(50, ErrorMessage = "Maximo 50 caracteres")]
         public string Descripcion { get; set; }
     }
 }
