@@ -9,6 +9,7 @@ namespace ProyTE.UI.Models
     //los usuarios del sistema, admin/clientes/empleados
     public class TbUsuarios
     {
+        
         public int Id_Usuario { get; set; }
 
         public int Id_Rol { get; set; }

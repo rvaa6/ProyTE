@@ -18,6 +18,18 @@ namespace ProyTE.UI
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            //Ruta Usuario
+            routes.MapRoute(
+                name: "Usuario",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Usuario",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
         }
     }
 }
