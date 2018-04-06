@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>F:\U\Progra V\Clase 10\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -190,6 +193,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutoMapperConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -204,6 +208,20 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\TbAlquileres.cs" />
+    <Compile Include="Models\TbAlquiler_Producto.cs" />
+    <Compile Include="Models\TbCategorias.cs" />
+    <Compile Include="Models\TbHistorial_Medidas.cs" />
+    <Compile Include="Models\TbPermisos.cs" />
+    <Compile Include="Models\TbPrendas.cs" />
+    <Compile Include="Models\TbProductos.cs" />
+    <Compile Include="Models\TbRoles.cs" />
+    <Compile Include="Models\TbRol_Permiso.cs" />
+    <Compile Include="Models\TbTarjetas.cs" />
+    <Compile Include="Models\TbTipo_Tarjetas.cs" />
+    <Compile Include="Models\TbUsuarios.cs" />
+    <Compile Include="Models\TbUsuario_Tarjeta.cs" />
+    <Compile Include="Models\ViewProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -278,6 +296,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyTE.BLL\ProyTE.BLL.csproj">
+      <Project>{de54bc78-f986-4867-848a-6e69ec04d53b}</Project>
+      <Name>ProyTE.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProyTE.DATA\ProyTE.DATA.csproj">
+      <Project>{c9f969a4-e468-47de-92fa-b0b6221166b2}</Project>
+      <Name>ProyTE.DATA</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
