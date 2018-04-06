@@ -13,10 +13,15 @@ namespace ProyTE.UI.Models
 
         public int Id_TipoTarjeta { get; set; }
 
+        [Required(ErrorMessage = "Nombre de la tarjeta requerida")]
+        [StringLength(190, ErrorMessage = "Maximo 100 caracteres")]
         public string NombreTarjeta { get; set; }
 
+        [Required(ErrorMessage = "Numero de Tarjeta requerido")]
+        [CreditCard]
         public decimal NumTarjeta { get; set; }
 
+        [Required(ErrorMessage = "Fecha de vencimiento requerida")]
         public DateTime FechaVencimiento { get; set; }
     }
 }

@@ -11,6 +11,8 @@ namespace ProyTE.UI.Models
     {
         public int Id_TipoTarjeta { get; set; }
 
+        [Required(ErrorMessage = "Descripción requerida")]
+        [StringLength(50, ErrorMessage = "Maximo 50 caracteres")]
         public string Descripcion { get; set; }
     }
 }
