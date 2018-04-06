@@ -200,8 +200,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlquilerController.cs" />
+    <Compile Include="Controllers\Historial_MedidaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PermisoController.cs" />
+    <Compile Include="Controllers\PrendaController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\RolController.cs" />
+    <Compile Include="Controllers\TarjetaController.cs" />
+    <Compile Include="Controllers\Tipo_TarjetaController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -288,6 +297,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Alquiler\" />
+    <Folder Include="Views\Historial_Medidas\" />
+    <Folder Include="Views\Permiso\" />
+    <Folder Include="Views\Prenda\" />
+    <Folder Include="Views\Producto\" />
+    <Folder Include="Views\Rol\" />
+    <Folder Include="Views\Tarjeta\" />
+    <Folder Include="Views\Tipo_Tarjeta\" />
+    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
