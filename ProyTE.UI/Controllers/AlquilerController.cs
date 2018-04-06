@@ -13,6 +13,12 @@ namespace ProyTE.UI.Controllers
 {
     public class AlquilerController : Controller
     {
+        IAlquileres alq;
+
+        public AlquilerController()
+        {
+            alq = new MAlquileres();
+        }
         // GET: Alquiler
         public ActionResult Index()
         {
