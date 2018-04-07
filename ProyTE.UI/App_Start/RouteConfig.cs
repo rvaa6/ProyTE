@@ -30,6 +30,102 @@ namespace ProyTE.UI
                     id = UrlParameter.Optional
                 }
             );
+
+            //Ruta Alquiler
+            routes.MapRoute(
+                name: "Alquiler",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Alquiler",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Historial_Medida
+            routes.MapRoute(
+                name: "Historial_Medida",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Historial_Medida",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Permiso
+            routes.MapRoute(
+                name: "Permiso",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Permiso",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Prenda
+            routes.MapRoute(
+                name: "Prenda",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Prenda",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Producto
+            routes.MapRoute(
+                name: "Producto",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Producto",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Rol
+            routes.MapRoute(
+                name: "Rol",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Rol",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Tarjeta
+            routes.MapRoute(
+                name: "Tarjeta",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Tarjeta",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            //Ruta Tipo_Tarjeta
+            routes.MapRoute(
+                name: "Tipo_Tarjeta",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Tipo_Tarjeta",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
         }
     }
 }
