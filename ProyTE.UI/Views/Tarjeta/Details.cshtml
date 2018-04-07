@@ -1,0 +1,58 @@
+﻿@model ProyTE.UI.Models.TbTarjetas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TbTarjetas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Tarjeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Tarjeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_TipoTarjeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_TipoTarjeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreTarjeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreTarjeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumTarjeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumTarjeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaVencimiento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Tarjeta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

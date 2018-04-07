@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ProyTE.UI.Models.TbPermisos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Permiso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Permiso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.Id_Permiso }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.Id_Permiso }) |
+            @Html.ActionLink("Eliminar", "Delete",
+                new { confirm = true, id = item.Id_Permiso },
+                new { onclick = "return confirm('¿Esta seguro de eliminar el permiso?')" })
+        </td>
+    </tr>
+}
+
+</table>

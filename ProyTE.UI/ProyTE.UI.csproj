@@ -298,17 +298,41 @@
     <Content Include="Views\Usuario\Create.cshtml" />
     <Content Include="Views\Usuario\Edit.cshtml" />
     <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Alquiler\Index.cshtml" />
+    <Content Include="Views\Alquiler\Details.cshtml" />
+    <Content Include="Views\Alquiler\Edit.cshtml" />
+    <Content Include="Views\Alquiler\Create.cshtml" />
+    <Content Include="Views\Historial_Medidas\Index.cshtml" />
+    <Content Include="Views\Historial_Medidas\Edit.cshtml" />
+    <Content Include="Views\Historial_Medidas\Details.cshtml" />
+    <Content Include="Views\Historial_Medidas\Create.cshtml" />
+    <Content Include="Views\Permiso\Index.cshtml" />
+    <Content Include="Views\Permiso\Edit.cshtml" />
+    <Content Include="Views\Permiso\Details.cshtml" />
+    <Content Include="Views\Permiso\Create.cshtml" />
+    <Content Include="Views\Prenda\Index.cshtml" />
+    <Content Include="Views\Prenda\Edit.cshtml" />
+    <Content Include="Views\Prenda\Details.cshtml" />
+    <Content Include="Views\Prenda\Create.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Rol\Index.cshtml" />
+    <Content Include="Views\Rol\Edit.cshtml" />
+    <Content Include="Views\Rol\Details.cshtml" />
+    <Content Include="Views\Rol\Create.cshtml" />
+    <Content Include="Views\Tarjeta\Index.cshtml" />
+    <Content Include="Views\Tarjeta\Edit.cshtml" />
+    <Content Include="Views\Tarjeta\Details.cshtml" />
+    <Content Include="Views\Tarjeta\Create.cshtml" />
+    <Content Include="Views\Tipo_Tarjeta\Index.cshtml" />
+    <Content Include="Views\Tipo_Tarjeta\Edit.cshtml" />
+    <Content Include="Views\Tipo_Tarjeta\Details.cshtml" />
+    <Content Include="Views\Tipo_Tarjeta\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Alquiler\" />
-    <Folder Include="Views\Historial_Medidas\" />
-    <Folder Include="Views\Permiso\" />
-    <Folder Include="Views\Prenda\" />
-    <Folder Include="Views\Producto\" />
-    <Folder Include="Views\Rol\" />
-    <Folder Include="Views\Tarjeta\" />
-    <Folder Include="Views\Tipo_Tarjeta\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProyTE.UI.Models.TbTipo_Tarjetas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_TipoTarjeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_TipoTarjeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.Id_TipoTarjeta }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.Id_TipoTarjeta }) |
+            @Html.ActionLink("Eliminar", "Delete",
+                new { confirm = true, id = item.Id_TipoTarjeta },
+                new { onclick = "return confirm('¿Esta seguro de eliminar el tipo de tarjeta?')" })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,74 @@
+﻿@model ProyTE.UI.Models.TbProductos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TbProductos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Prenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Prenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Talla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Talla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tela)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tela)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Producto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

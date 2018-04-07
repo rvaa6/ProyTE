@@ -1,0 +1,98 @@
+﻿@model ProyTE.UI.Models.TbAlquileres
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TbAlquileres</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Alquiler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Alquiler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Devuelve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Devuelve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Multa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Multa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reparacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reparacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaAlquiler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaAlquiler)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Alquiler }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

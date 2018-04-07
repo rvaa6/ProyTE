@@ -1,0 +1,89 @@
+﻿@model IEnumerable<ProyTE.UI.Models.TbAlquileres>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Alquiler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Entrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Devuelve)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Multa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reparacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detalle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaAlquiler)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Alquiler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Entrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Devuelve)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Multa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reparacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detalle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaAlquiler)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.Id_Alquiler }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.Id_Alquiler }) |
+            @Html.ActionLink("Eliminar", "Delete",
+                new { confirm = true, id = item.Id_Alquiler },
+                new { onclick = "return confirm('¿Esta seguro de eliminar el alquiler?')" })
+        </td>
+    </tr>
+}
+
+</table>
