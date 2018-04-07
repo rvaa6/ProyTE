@@ -22,6 +22,7 @@ namespace ProyTE.UI.Models
         public decimal NumTarjeta { get; set; }
 
         [Required(ErrorMessage = "Fecha de vencimiento requerida")]
+        //Datetime picker
         public DateTime FechaVencimiento { get; set; }
     }
 }
